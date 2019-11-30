@@ -1,0 +1,26 @@
+.container{
+    padding-top: 20px;
+
+.card-user {
+    width: 400px;
+
+    .userImage {
+        width: 100%;
+    }
+
+    blockquote {
+        font-style: normal;
+        font-size: 16px;
+        margin-left: 32px;
+        font-family: Consolas, "Times New Roman", Verdana;
+        border-left: 4px solid #CCC;
+        padding-left: 8px;
+    }
+}
+    .quote-button-cont {
+        padding: 20px;
+    }
+    .hiddenAge {
+        margin: 20px;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="card-user">
+        <img class="userImage" [src]="user.photo" [alt]="user.name">
+        <div class="card_body">
+            <h4 class="card-name">{{ user.name }} {{ user.firstName }}</h4>
+            <p *ngIf = "!isShow">{{ user.age }}</p>
+            <blockquote class="card-text">{{ user.quote }}</blockquote>
+        </div>
+    </div>
+    <div class="quote-button-cont">
+        <input [(ngModel)]="user.quote" placeholder="write something"/>
+        <button class="hiddenAge" (click)=hideAge()>{{ this.isShow ? "Show Age":"Hide Age" }}</button>
+    </div>
+</div>
